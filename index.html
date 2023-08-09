@@ -1,6 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <title>Warning!</title>
+  <style>
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    
+    .popup {
+      background-color: w3-green;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+
+
+<body>
+
+ 
+<h5> To get better experience please visit from Desktop </h5>
+
+<button onclick="showPopup()">Click Me</button>
+
+<div id="popup" class="overlay">
+  <div class="popup">
+    <h2>This website is created for Desktop & On Construction!</h2>
+    <p> To get better experience please visit from Desktop.</p>
+    <h2> Thanks For Visiting </h2>
+    <button onclick="hidePopup()">Close</button>
+  </div>
+</div>
+
+<script>
+  function showPopup() {
+    document.getElementById("popup").style.display = "flex";
+  }
+
+  function hidePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
     <title> Imam hossain shabbir </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=computer-width, initial-scale=1">
@@ -13,22 +74,21 @@
     </style>
   </head>
 
-  //the main theme for the website//
+
 <body class="w3-theme-d3">
 
-<!-- Navigation bar -->
+<!-- Navbar -->
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav(helllo)"><i class="fa fa-bars"></i></a>
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>IHS OFFICIAL 2023</a>
   <a href="https://web.facebook.com/ihs.port346" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
-  
   <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-red">3</span></button>     
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-      <a href="page2.html" class="w3-bar-item w3-button">Security Alert</a>
+      <a href="#" class="w3-bar-item w3-button">Security Alert</a>
       <a href="#" class="w3-bar-item w3-button"> Access More</a>
       <a href="#" class="w3-bar-item w3-button">Gift from IHS</a>
     </div>
@@ -41,10 +101,10 @@
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">https://web.facebook.com/ihs.port346</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">https://web.facebook.com/ihs.port346</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">https://web.facebook.com/ihs.port346</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+  <a href="https://www.facebook.com/imamhossainshabbir" class="w3-bar-item w3-button w3-padding-large"></a>
+  <a href="https://www.facebook.com/imamhossainshabbir" class="w3-bar-item w3-button w3-padding-large"></a>
+  <a href="https://www.facebook.com/imamhossainshabbir" class="w3-bar-item w3-button w3-padding-large"></a>
+  <a href="https://www.facebook.com/imamhossainshabbir" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
 </div>
 
 <!-- Page Container -->
@@ -54,9 +114,8 @@
     <!-- Left Column -->
     <div class="w3-col m3">
       <!-- Profile -->
-      <p><button class="w3-button w3-blocks w3-grey w3-section"> 
       <div class="w3-card-4 w3-round w3-bar-block w3-theme-d1">
-          
+        <p><button class="w3-button w3-block w3-theme-d1 w3-section">
         <div class="w3-container">
          <h4 class="w3-center">My Info </h4>
          <p class="w3-center"><img src="./IMG-20230106-WA0013_edited.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
@@ -68,8 +127,8 @@
          <p><i class="fa fa-youtube fa-fw w3-margin-right w3-text-theme"></i>empty</p>
 
         </div>
-      </div>
         </button></p>
+      </div>
       <br>
       
       <!-- Accordion -->
@@ -137,8 +196,8 @@
         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
           <i class="fa fa-remove"></i>
         </span>
-        <p><strong>For vistior</strong></p>
-        <p>Visit FB Insta</p>
+        <p><strong>For visitors</strong></p>
+        <p> The Page is on Under Construction please mind the Errors </p>
       </div>
     
     <!-- End Left Column -->
@@ -205,12 +264,14 @@
     <!-- Right Column -->
     <div class="w3-col m2">
       <div class="w3-card-4 w3-round w3-theme-d2 w3-center">
+        <p><button class="w3-button w3-block w3-theme-blue-grey w3-section">
         <div class="w3-container">
           <p>Running Projects:</p>
           <img src="./pngwing.com.png" alt="Forest" style="width:100%;">
           <p><strong>Holiday</strong></p>
           <p>Friday (Am-Pm)</p>
           <p><button class="w3-button w3-block w3-green w3-section">Info</button></p>
+          </button></p>
         </div>
       </div>
       <br>
@@ -260,7 +321,7 @@
 </footer>
 
 <Landing class="w3-card-4 w3-round w3-white w3-center">
-  <p>Copyright IHS official 2023 <a href="https://web.facebook.com/ihs.port346" target="_blank">Meet Him</a></p>
+  <p>Copyright IHS official 2023 <a href="https://www.facebook.com/imamhossainshabbir" target="_blank">Meet Him</a></p>
 </footer>
  
 <script>
