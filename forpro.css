@@ -1,90 +1,38 @@
- .profileneon,body {
-    color: #fff;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #bc13fe,
-      0 0 82px #bc13fe,
-      0 0 92px #bc13fe,
-      0 0 102px #bc13fe,
-      0 0 151px #bc13fe;
-
-  }
-
-    
-  .portb {
-    
-    font-size: 1rem;
-    /*
-    animation: pulsate 1.5s infinite alternate;  
-    */
-    border: 0.5rem solid #fff;
-    border-radius: 2rem;
-    padding: 0.1em;
-    box-shadow: 0 0 .2rem #fff,
-              0 0 .2rem #fff,
-              0 0 2rem #bc13fe,
-              0 0 0.8rem #bc13fe,
-              0 0 2.8rem #bc13fe,
-              inset 0 0 2.3rem #030863; 
-  }
-  
-  @keyframes pulsate {% {
-  
-        text-shadow:
-        0 0 6px #da8bfe,
-        0 0 11px #5a5858,
-        0 0 19px #787272,
-        0 0 40px #bc13fe,
-        0 0 80px #bc13fe,
-        0 0 90px #bc13fe,
-        0 0 100px #bc13fe,
-        0 0 150px #bc13fe;
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px #bc13fe,
-      0 0 35px #bc13fe,
-      0 0 55px #bc13fe,
-      0 0 70px #bc13fe,
-      0 0 80px #bc13fe;
-  
-  }
-}
-body{
-  background-color: black;
-}
-.top{
-  background-color: rgb(39, 39, 39);
+.profileneon,bio {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
 
 }
 
-.frr {
+  
+.bio {
+  
   font-size: 1rem;
   /*
   animation: pulsate 1.5s infinite alternate;  
   */
   border: 0.5rem solid #fff;
-  border-radius: 3rem;
-  padding: 0.4em;
+  border-radius: 2rem;
+  padding: 0.1em;
   box-shadow: 0 0 .2rem #fff,
             0 0 .2rem #fff,
-            0 0 2rem #bc13fe,
+            0 0 2rem #e46903,
             0 0 0.8rem #bc13fe,
             0 0 2.8rem #bc13fe,
             inset 0 0 2.3rem #030863; 
 }
 
-@keyframes pulsate {% {
-
-      text-shadow:
+@keyframes pulsate {
+  100% {
+    text-shadow:
       0 0 6px #da8bfe,
       0 0 11px #5a5858,
       0 0 19px #787272,
@@ -93,12 +41,57 @@ body{
       0 0 90px #bc13fe,
       0 0 100px #bc13fe,
       0 0 150px #bc13fe;
-  
   }
   
-  0% {
-
+  50% {
     text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #bc13fe,
+      0 0 35px #bc13fe,
+      0 0 55px #bc13fe,
+      0 0 70px #bc13fe,
+      0 0 80px #bc13fe;
+  }
+}
+body{
+background-color: black;
+ color: white;
+}
+.top{
+background-color: rgb(39, 39, 39);
+
+}
+
+.frr {
+font-size: 1rem;
+border: 0.5rem solid #fff;
+border-radius: 2rem;
+padding: 0.1em;
+box-shadow: 0 0 .2rem #fff,
+          0 0 .2rem #fff,
+          0 0 2rem #bc13fe,
+          0 0 0.8rem #bc13fe,
+          0 0 2.8rem #bc13fe,
+          inset 0 0 2.3rem #030863; 
+}
+
+@keyframes pulsate {
+100% {
+  text-shadow:
+    0 0 6px #da8bfe,
+    0 0 11px #5a5858,
+    0 0 19px #787272,
+    0 0 40px #bc13fe,
+    0 0 80px #bc13fe,
+    0 0 90px #bc13fe,
+    0 0 100px #bc13fe,
+    0 0 150px #bc13fe;
+}
+
+50% {
+  text-shadow:
     0 0 2px #fff,
     0 0 4px #fff,
     0 0 6px #fff,
@@ -107,80 +100,91 @@ body{
     0 0 55px #bc13fe,
     0 0 70px #bc13fe,
     0 0 80px #bc13fe;
-
 }
 }
-
-
-
 /*color border animation*/
-.portb {
-  width: 300px;
-  height: 300px;
-  font-size:15px;
-  color: #fff;
-  background: none;
-  border: none;
-  border-radius: 50%; 
-  position: relative;
-  z-index: 0;
-  transition: .2s;
-  cursor: pointer;
+.bio {
+width: 300px;
+height: 350px;
+font-size:15px;
+color: #fff;
+background: black;
+border: none;
+border-radius: 50%; 
+position: relative;
+z-index: 0;
+transition: .2s;
+cursor: zoom-out;
 }
-.portb:before {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  padding: 10px;
-  border-radius: 50%; 
-  background: conic-gradient(
-        #ff53bb ,
-        #0000 30deg 120deg,
-        #00f8d3 150deg 180deg,
-        #0000 210deg 300deg,
-        #ff53bb 330deg
-    );
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: intersect
+/*
+.bio::before {
+content: "";
+position: absolute;
+inset: -8px;
+padding: 10px;
+border-radius: 50%; 
+background: conic-gradient(
+      #ff53bb ,
+      #0000 30deg 120deg,
+      #00f8d3 150deg 180deg,
+      #0000 210deg 300deg,
+      #ff53bb 330deg
+  );
+-webkit-mask:
+  linear-gradient(#000 0 0) content-box,
+  linear-gradient(#000 0 0);
+-webkit-mask-composite: xor;
+        mask-composite: intersect
 }
-.portb:after {
-  content: "";
-  position: absolute;
-  inset: -100px;
-  background:
-    radial-gradient(200px at left  400px top 150px,#ff53bb 100%,#0000),
-    radial-gradient(200px at right 400px bottom 150px,#00f8d3 100%,#0000);
-    
-  filter: blur(120px);
-  opacity: .5;
+*/
+.bio:after {
+content: "";
+position: absolute;
+inset: -100px;
+background:
+  radial-gradient(50px at left  100px top 120px,#ff53bb 100%,#0000),
+  radial-gradient(50px at right 100px bottom 120px,#00f8d3 100%,#0000);
+filter: blur(80px);
+opacity: .5;
+/* Missing closing brace added */
+}
+.bio:before,
+.bio:after {
+transition:.5s, 99999s 99999s transform;
+}
+.bio:hover {
+box-shadow: 0 0 0 0px #666;
 }
 
-.portb:before,
-.portb:after {
-  transition:.5s, 99999s 99999s transform;
+.bio:hover:before,
+.bio:hover:after {
+transform: rotate(36000deg);
+transition: .5s,600s linear transform;
 }
-.portb:hover {
-  box-shadow: 0 0 0 1px #666;
-}
-
-.portb:hover:before,
-.portb:hover:after {
-  transform: rotate(36000deg);
-  transition: .5s,600s linear transform;
-}
-.portb:before {
-  background-color: #222;
-    border: 2px solid #333;
+.bio:before {
+background-color: #222;
+  border: 2px solid #333;
 }
 
 /* for right side*/
 
 .frr {
-  width: 220px;
-  height: 220px;
+width: 220px;
+height: 200px;
+font-size:12px;
+color: #fff;
+background: none;
+border: none;
+border-radius: 50%; 
+position: relative;
+z-index: 0;
+transition: .2s;
+cursor: pointer;
+}
+
+.client {
+  width: 100px;
+  height: 100px;
   font-size:12px;
   color: #fff;
   background: none;
@@ -191,56 +195,60 @@ body{
   transition: .2s;
   cursor: pointer;
 }
+
+/*
 .frr:before {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  padding: 10px;
-  border-radius: 50%; 
-  background: conic-gradient(
-        #ff53bb ,
-        #0000 30deg 120deg,
-        #00f8d3 150deg 180deg,
-        #0000 210deg 300deg,
-        #ff53bb 330deg
-    );
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: intersect
+content: "";
+position: absolute;
+inset: -8px;
+padding: 10px;
+border-radius: 50%; 
+background: conic-gradient(
+      #ff53bb ,
+      #0000 30deg 120deg,
+      #00f8d3 150deg 180deg,
+      #0000 210deg 300deg,
+      #ff53bb 330deg
+  );
+-webkit-mask:
+  linear-gradient(#000 0 0) content-box,
+  linear-gradient(#000 0 0);
+-webkit-mask-composite: xor;
+        mask-composite: intersect
 }
+*/
 .frr:after {
-  content: "";
-  position: absolute;
-  inset: -100px;
-  background:
-    radial-gradient(200px at left  400px top 150px,#ff53bb 100%,#0000),
-    radial-gradient(200px at right 400px bottom 150px,#00f8d3 100%,#0000);
-    
-  filter: blur(120px);
-  opacity: .5;
+content: "";
+position: absolute;
+inset: -100px;
+/* Additional properties and closing brace needed */
+background:
+  radial-gradient(200px at left  400px top 150px,#ff53bb 100%,#0000),
+  radial-gradient(200px at right 400px bottom 150px,#00f8d3 100%,#0000);
+  
+filter: blur(200px);
+opacity: .5;
 }
 
 .frr:before,
 .frr:after {
-  transition:.5s, 99999s 99999s transform;
+transition:.5s, 99999s 99999s transform;
 }
 .frr:hover {
-  box-shadow: 0 0 0 1px #666;
+box-shadow: 0 0 0 0px #666;
 }
 
 .frr:hover:before,
 .frr:hover:after {
-  transform: rotate(36000deg);
-  transition: .5s,600s linear transform;
+transform: rotate(36000deg);
+transition: .5s,600s linear transform;
 }
 .frr:before {
-  background-color: #222;
-    border: 2px solid #333;
+background-color: #222;
+  border: 2px solid #333;
 }
 
 .onlypic{
 
-  font-size: 10px;
+font-size: 10px;
 }
